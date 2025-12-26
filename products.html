@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Produkter – NordForge Training. Gymredskap för hemmagym och styrketräning." />
+  <title>Produkter | NordForge Training</title>
+
+  <link rel="icon" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Hoppa till innehåll</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="NordForge Training - startsida">
+        <span class="brand-mark" aria-hidden="true">NF</span>
+        <span class="brand-text">
+          <span class="brand-name">NordForge</span>
+          <span class="brand-tag">Training Supply</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Öppna meny</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="primary-nav" class="nav" aria-label="Huvudmeny">
+        <a class="nav-link" href="index.html">Start</a>
+        <a class="nav-link is-active" href="products.html">Produkter</a>
+        <a class = "nav-link" href = "product-1.html">Kettlebell 16 kg</a>
+        <a class="nav-link" href="about.html">Om</a>
+        <a class="nav-link nav-cart" href="cart.html" aria-label="Varukorg">
+          Varukorg
+          <span class="cart-badge">2</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Top banner / mini-hero -->
+    <section class="section">
+      <div class="container">
+        <div class="products-hero">
+          <div>
+            <p class="pill">Produkter</p>
+            <h1 class="page-title">Allt för ditt hemmagym</h1>
+            <p class="section-subtitle">
+              Styrka, cardio och recovery – bygg en setup som håller för progression.
+              (Statisk demo, inga filterfunktioner krävs.)
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#grid">Bläddra produkter</a>
+              <a class="btn btn-ghost" href="#guides">Träningsguider</a>
+            </div>
+          </div>
+
+          <div class="products-hero-card">
+            <h2 class="mini-title">Just nu</h2>
+            <p class="muted">Fri frakt över <strong>699 kr</strong> + 30 dagar öppet köp.</p>
+            <ul class="bullets muted">
+              <li>Robusta material</li>
+              <li>Passar små ytor</li>
+              <li>Tydliga produktsidor</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Kategorier</h2>
+            <p class="section-subtitle">Klickbara rutor (statisk navigering/placeholder).</p>
+          </div>
+        </div>
+
+        <div class="category-grid" aria-label="Produktkategorier">
+          <a class="category" href="#grid">
+            <h3>Styrka</h3>
+            <p class="muted">Kettlebells, bälten, grepp.</p>
+            <span class="muted small">Utforska →</span>
+          </a>
+          <a class="category" href="#grid">
+            <h3>Cardio</h3>
+            <p class="muted">Hopprep, intervaller.</p>
+            <span class="muted small">Utforska →</span>
+          </a>
+          <a class="category" href="#grid">
+            <h3>Recovery</h3>
+            <p class="muted">Rollers, massage, rörlighet.</p>
+            <span class="muted small">Utforska →</span>
+          </a>
+          <a class="category" href="#grid">
+            <h3>Rehab & Mobility</h3>
+            <p class="muted">Gummiband, uppvärmning.</p>
+            <span class="muted small">Utforska →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filters + Product grid -->
+    <section id="grid" class="section">
+      <div class="container">
+        <div class="grid-head">
+          <div>
+            <h2 class="section-title">Alla produkter</h2>
+            <p class="section-subtitle">5 produkter räcker för kurskravet – bygg ut senare.</p>
+          </div>
+
+          <!-- Statisk filterbar -->
+          <aside class="filters" aria-label="Filter (statisk demo)">
+            <div class="filters-row">
+              <div class="field">
+                <label for="category">Kategori</label>
+                <select id="category" name="category">
+                  <option>Alla</option>
+                  <option>Styrka</option>
+                  <option>Cardio</option>
+                  <option>Recovery</option>
+                  <option>Rehab & Mobility</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="sort">Sortering</label>
+                <select id="sort" name="sort">
+                  <option>Populärast</option>
+                  <option>Pris: lågt → högt</option>
+                  <option>Pris: högt → lågt</option>
+                  <option>Nyheter</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="filters-row">
+              <div class="field field-grow">
+                <label for="q">Sök</label>
+                <input id="q" name="q" type="search" placeholder="Sök produkter…" />
+              </div>
+              <button class="btn btn-small" type="button" aria-disabled="true">Filtrera</button>
+            </div>
+
+            <p class="muted small">*Filter är endast layout i detta skede.</p>
+          </aside>
+        </div>
+
+        <div class="product-grid">
+          <article class="product">
+            <a class="product-media" href="product-1.html">
+              <img src="assets/img/product-1.jpg" alt="Kettlebell 16 kg" loading="lazy" />
+            </a>
+            <div class="product-body">
+              <p class="badge">Bästsäljare</p>
+              <h2 class="product-title"><a href="product-1.html">Kettlebell 16 kg</a></h2>
+              <p class="product-desc">Gjutjärn med greppvänlig yta. För swing, goblet squat och press.</p>
+              <div class="product-row">
+                <span class="price">699 kr</span>
+                <a class="btn btn-small" href="product-1.html">Visa</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <a class="product-media" href="product-2.html">
+              <img src="assets/img/product-2.jpg" alt="Gummiband set (5 motstånd)" loading="lazy" />
+            </a>
+            <div class="product-body">
+              <p class="badge badge-muted">Nyhet</p>
+              <h2 class="product-title"><a href="product-2.html">Gummiband – 5 pack</a></h2>
+              <p class="product-desc">Fem nivåer för uppvärmning, rehab och pull-ups.</p>
+              <div class="product-row">
+                <span class="price">249 kr</span>
+                <a class="btn btn-small" href="product-2.html">Visa</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <a class="product-media" href="product-3.html">
+              <img src="assets/img/product-3.jpg" alt="Lyftbälte i läder" loading="lazy" />
+            </a>
+            <div class="product-body">
+              <p class="badge">Styrka</p>
+              <h2 class="product-title"><a href="product-3.html">Lyftbälte (läder)</a></h2>
+              <p class="product-desc">Stabilitet i knäböj och mark. Klassisk spänne-design.</p>
+              <div class="product-row">
+                <span class="price">499 kr</span>
+                <a class="btn btn-small" href="product-3.html">Visa</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <a class="product-media" href="product-4.html">
+              <img src="assets/img/product-4.jpg" alt="Justerbart hopprep" loading="lazy" />
+            </a>
+            <div class="product-body">
+              <p class="badge badge-muted">Cardio</p>
+              <h2 class="product-title"><a href="product-4.html">Justerbart hopprep</a></h2>
+              <p class="product-desc">Snabbt och lätt. Perfekt för intervaller och warm-up.</p>
+              <div class="product-row">
+                <span class="price">159 kr</span>
+                <a class="btn btn-small" href="product-4.html">Visa</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <a class="product-media" href="product-5.html">
+              <img src="assets/img/product-5.jpg" alt="Foam roller" loading="lazy" />
+            </a>
+            <div class="product-body">
+              <p class="badge">Recovery</p>
+              <h2 class="product-title"><a href="product-5.html">Foam roller</a></h2>
+              <p class="product-desc">Rulla igång återhämtningen. Räfflad struktur för djupare tryck.</p>
+              <div class="product-row">
+                <span class="price">199 kr</span>
+                <a class="btn btn-small" href="product-5.html">Visa</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guides section (fyller ut + känns seriöst) -->
+    <section id="guides" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Träningsguider</h2>
+        <p class="section-subtitle">Innehåll som gör butiken mer “levande” även utan backend.</p>
+
+        <div class="cards-3">
+          <article class="card">
+            <h3>Kettlebell – 20 min helkropp</h3>
+            <p>3 rundor: swing, goblet squat, press, rodd. Skala tempo efter nivå.</p>
+          </article>
+          <article class="card">
+            <h3>Band – uppvärmning för axlar</h3>
+            <p>Face pulls, pull-aparts, external rotations. 2×12 lugnt och kontrollerat.</p>
+          </article>
+          <article class="card">
+            <h3>Recovery – rulla smart</h3>
+            <p>60–90 sek per muskelgrupp. Andas lugnt och undvik smärtpunkter.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section">
+      <div class="container cta">
+        <div>
+          <h2 class="cta-title">Redo att bygga vidare?</h2>
+          <p class="cta-text">Lägg till fler produkter och skapa product-2…product-5 med samma mall.</p>
+        </div>
+        <a class="btn btn-primary" href="cart.html">Gå till varukorg</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">

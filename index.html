@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="NordForge Training – webbutik för gymredskap. Kettlebells, gummiband, lyftbälte och mer." />
+  <title>NordForge Training | Gymredskap</title>
+
+  <link rel="icon" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Hoppa till innehåll</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="NordForge Training - startsida">
+        <span class="brand-mark" aria-hidden="true">NF</span>
+        <span class="brand-text">
+          <span class="brand-name">NordForge</span>
+          <span class="brand-tag">Training Supply</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Öppna meny</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="primary-nav" class="nav" aria-label="Huvudmeny">
+        <a class="nav-link is-active" href="index.html">Start</a>
+        <a class="nav-link" href="products.html">Produkter</a>
+        <a class = "nav-link" href = "product-1.html">Kettlebell 16 kg</a>
+        <a class="nav-link" href="about.html">Om</a>
+        <a class="nav-link nav-cart" href="cart.html" aria-label="Varukorg">
+          Varukorg
+          <span class="cart-badge" data-cart-count>0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="pill">Ny kollektion • Hemmagym</p>
+          <h1>Gymredskap som tål nordisk styrka.</h1>
+          <p class="lead">
+            NordForge Training är en fiktiv webbutik med fokus på robusta redskap:
+            kettlebells, gummiband, lyftbälten och återhämtningsprylar.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="products.html">Shoppa produkter</a>
+            <a class="btn btn-ghost" href="#featured">Se utvalda</a>
+          </div>
+
+          <ul class="hero-meta">
+            <li><strong>Fri frakt</strong> över 699 kr</li>
+            <li><strong>30 dagar</strong> öppet köp</li>
+            <li><strong>Support</strong> vardagar</li>
+          </ul>
+        </div>
+
+        <div class="hero-media" aria-label="Produktbild">
+          <!-- Byt till dina egna bilder. Använd gärna <picture> senare för webp + fallback -->
+          <img src="assets/img/hero.jpg" alt="Gymredskap i träningsmiljö" loading="eager" />
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST / FEATURES -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Byggt för progression</h2>
+        <p class="section-subtitle">En ren, kraftfull design som du kan återanvända på hela webbutiken.</p>
+
+        <div class="cards-3">
+          <article class="card">
+            <h3>Hög hållbarhet</h3>
+            <p>Material och konstruktion som är gjorda för repetitioner, drop sets och tuffa pass.</p>
+          </article>
+          <article class="card">
+            <h3>Smart förvaring</h3>
+            <p>Komponenter som funkar i små ytor – perfekt för hemmagym och lägenhet.</p>
+          </article>
+          <article class="card">
+            <h3>Enkel checkout</h3>
+            <p>Statisk demo för varukorg/checkout som visar hur flödet är tänkt att fungera.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section id="featured" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Utvalda produkter</h2>
+            <p class="section-subtitle">Fem produkter räcker för kurskravet — bygg ut när du vill.</p>
+          </div>
+          <a class="link" href="products.html">Se alla produkter →</a>
+        </div>
+
+        <div class="product-grid">
+          <!-- Produkt 1 -->
+          <article class="product">
+            <a class="product-media" href="product-1.html">
+              <img src="assets/img/product-1.jpg" alt="Kettlebell 16 kg" loading="lazy" />
+            </a>
+            <div class="product-body">
+              <p class="badge">Bästsäljare</p>
+              <h3 class="product-title"><a href="product-1.html">Kettlebell 16 kg</a></h3>
+              <p class="product-desc">Gjutjärn med greppvänlig yta. För swing, goblet squat och press.</p>
+              <div class="product-row">
+                <span class="price">699 kr</span>
+                <button class="btn btn-small" data-add-to-cart data-sku="kb-16" data-name="Kettlebell 16 kg" data-price="699">
+                  Lägg i
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produkt 2 -->
+          <article class="product">
+            <a class="product-media" href="product-2.html">
+              <img src="assets/img/product-2.jpg" alt="Gummiband set (5 motstånd)" loading="lazy" />
+            </a>
+            <div class="product-body">
+              <p class="badge badge-muted">Nyhet</p>
+              <h3 class="product-title"><a href="product-2.html">Gummiband – 5 pack</a></h3>
+              <p class="product-desc">Fem nivåer för uppvärmning, rehab och pull-ups.</p>
+              <div class="product-row">
+                <span class="price">249 kr</span>
+                <button class="btn btn-small" data-add-to-cart data-sku="band-5" data-name="Gummiband – 5 pack" data-price="249">
+                  Lägg i
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produkt 3 -->
+          <article class="product">
+            <a class="product-media" href="product-3.html">
+              <img src="assets/img/product-3.jpg" alt="Lyftbälte i läder" loading="lazy" />
+            </a>
+            <div class="product-body">
+              <p class="badge">Styrka</p>
+              <h3 class="product-title"><a href="product-3.html">Lyftbälte (läder)</a></h3>
+              <p class="product-desc">Stabilitet i knäböj och mark. Klassisk spänne-design.</p>
+              <div class="product-row">
+                <span class="price">499 kr</span>
+                <button class="btn btn-small" data-add-to-cart data-sku="belt-01" data-name="Lyftbälte (läder)" data-price="499">
+                  Lägg i
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produkt 4 -->
+          <article class="product">
+            <a class="product-media" href="product-4.html">
+              <img src="assets/img/product-4.jpg" alt="Justerbart hopprep" loading="lazy" />
+            </a>
+            <div class="product-body">
+              <p class="badge badge-muted">Cardio</p>
+              <h3 class="product-title"><a href="product-4.html">Justerbart hopprep</a></h3>
+              <p class="product-desc">Snabbt och lätt. Perfekt för intervaller och warm-up.</p>
+              <div class="product-row">
+                <span class="price">159 kr</span>
+                <button class="btn btn-small" data-add-to-cart data-sku="rope-01" data-name="Justerbart hopprep" data-price="159">
+                  Lägg i
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produkt 5 -->
+          <article class="product">
+            <a class="product-media" href="product-5.html">
+              <img src="assets/img/product-5.jpg" alt="Foam roller" loading="lazy" />
+            </a>
+            <div class="product-body">
+              <p class="badge">Recovery</p>
+              <h3 class="product-title"><a href="product-5.html">Foam roller</a></h3>
+              <p class="product-desc">Rulla igång återhämtningen. Räfflad struktur för djupare tryck.</p>
+              <div class="product-row">
+                <span class="price">199 kr</span>
+                <button class="btn btn-small" data-add-to-cart data-sku="roll-01" data-name="Foam roller" data-price="199">
+                  Lägg i
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER / CTA -->
+    <section class="section">
+      <div class="container cta">
+        <div>
+          <h2 class="cta-title">Få träningsguider & produktnyheter</h2>
+          <p class="cta-text">En statisk demo-form (ingen inskickning krävs i projektet).</p>
+        </div>
+
+        <form class="cta-form" action="#" method="post">
+          <label class="sr-only" for="email">E-post</label>
+          <input id="email" name="email" type="email" placeholder="din@mail.se" autocomplete="email" />
+          <button class="btn btn-primary" type="submit">Prenumerera</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">
+          <span class="brand-mark" aria-hidden="true">NF</span>
+          <strong>NordForge Training</strong>
+        </p>
+        <p class="muted">
+          Fiktiv webbutik skapad för kursprojekt. Allt bild- och videomaterial ska produceras av dig.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Sidor</h3>
+        <ul class="footer-links">
+          <li><a href="products.html">Produkter</a></li>
+          <li><a href="cart.html">Varukorg</a></li>
+          <li><a href="about.html">Om</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Kontakt</h3>
+        <ul class="footer-links">
+          <li><a href="#">support@nordforge.test</a></li>
+          <li><a href="#">+46 00 000 00 00</a></li>
+          <li><span class="muted">Östersund, Sverige</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <small class="muted">© <span id="year"></span> NordForge Training. Alla rättigheter förbehållna.</small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

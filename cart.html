@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Varukorg – NordForge Training. Statisk checkout-layout (demo)." />
+  <title>Varukorg | NordForge Training</title>
+
+  <link rel="icon" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Hoppa till innehåll</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="NordForge Training - startsida">
+        <span class="brand-mark" aria-hidden="true">NF</span>
+        <span class="brand-text">
+          <span class="brand-name">NordForge</span>
+          <span class="brand-tag">Training Supply</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Öppna meny</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="primary-nav" class="nav" aria-label="Huvudmeny">
+        <a class="nav-link" href="index.html">Start</a>
+        <a class="nav-link is-active" href="products.html">Produkter</a>
+        <a class = "nav-link" href = "product-1.html">Kettlebell 16 kg</a>
+        <a class="nav-link" href="about.html">Om</a>
+        <a class="nav-link nav-cart" href="cart.html" aria-label="Varukorg">
+          Varukorg
+          <span class="cart-badge">2</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <p class="pill">Varukorg</p>
+        <h1 class="page-title">Din varukorg</h1>
+        <p class="section-subtitle">Exempelvaror för att visa hur checkout-designen är tänkt att fungera.</p>
+      </div>
+
+      <div class="container cart-grid">
+        <!-- Varor -->
+        <section class="panel cart-items" aria-label="Varor i varukorg">
+          <div class="cart-header">
+            <h2>Varor</h2>
+            <a class="muted" href="products.html">Fortsätt handla</a>
+          </div>
+
+          <div class="cart-item">
+            <img class="cart-thumb" src="assets/img/product-1.jpg" alt="Kettlebell 16 kg" />
+            <div class="cart-meta">
+              <h3 class="cart-title"><a href="product-1.html">Kettlebell 16 kg</a></h3>
+              <p class="muted small">SKU: KB-16 • Leverans 2–4 dagar (demo)</p>
+              <div class="qty">
+                <span class="muted">Antal</span>
+                <span class="qty-box" aria-label="Antal (statisk)">1</span>
+              </div>
+            </div>
+            <div class="cart-price">
+              <strong>699 kr</strong>
+              <a class="muted small" href="#" aria-disabled="true">Ta bort</a>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <img class="cart-thumb" src="assets/img/product-2.jpg" alt="Gummiband – 5 pack" />
+            <div class="cart-meta">
+              <h3 class="cart-title"><a href="product-2.html">Gummiband – 5 pack</a></h3>
+              <p class="muted small">SKU: BAND-5 • Leverans 2–4 dagar (demo)</p>
+              <div class="qty">
+                <span class="muted">Antal</span>
+                <span class="qty-box" aria-label="Antal (statisk)">1</span>
+              </div>
+            </div>
+            <div class="cart-price">
+              <strong>249 kr</strong>
+              <a class="muted small" href="#" aria-disabled="true">Ta bort</a>
+            </div>
+          </div>
+
+          <div class="cart-note">
+            <p class="muted small">
+              *Denna varukorg är statisk i projektet. Du kan senare lägga till JS för att uppdatera antal och totalsumma.
+            </p>
+          </div>
+        </section>
+
+        <!-- Sammanfattning -->
+        <aside class="panel cart-summary" aria-label="Sammanfattning">
+          <h2>Sammanfattning</h2>
+
+          <dl class="summary">
+            <div class="summary-row">
+              <dt>Varor</dt>
+              <dd>948 kr</dd>
+            </div>
+            <div class="summary-row">
+              <dt>Frakt</dt>
+              <dd>49 kr</dd>
+            </div>
+            <div class="summary-row">
+              <dt>Rabatt</dt>
+              <dd>-0 kr</dd>
+            </div>
+            <div class="summary-row total">
+              <dt>Totalt</dt>
+              <dd>997 kr</dd>
+            </div>
+          </dl>
+
+          <a class="btn btn-primary btn-full" href="#" aria-disabled="true">Till betalning (demo)</a>
+
+          <div class="divider"></div>
+
+          <h3>Leverans</h3>
+          <p class="muted small">Välj leveransalternativ (statisk layout):</p>
+
+          <div class="radio-list">
+            <label class="radio">
+              <input type="radio" name="ship" checked />
+              <span>Postombud • 49 kr</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="ship" />
+              <span>Hemleverans • 99 kr</span>
+            </label>
+          </div>
+
+          <div class="divider"></div>
+
+          <h3>Trygghet</h3>
+          <ul class="bullets muted small">
+            <li>30 dagar öppet köp</li>
+            <li>Säker betalning (demo)</li>
+            <li>Support vardagar</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">
+          <span class="brand-mark" aria-hidden="true">NF</span>
+          <strong>NordForge Training</strong>
+        </p>
+        <p class="muted">
+          Fiktiv webbutik skapad för kursprojekt. Allt bild- och videomaterial ska produceras av dig.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Sidor</h3>
+        <ul class="footer-links">
+          <li><a href="products.html">Produkter</a></li>
+          <li><a href="cart.html">Varukorg</a></li>
+          <li><a href="about.html">Om</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Kontakt</h3>
+        <ul class="footer-links">
+          <li><a href="#">support@nordforge.test</a></li>
+          <li><a href="#">+46 00 000 00 00</a></li>
+          <li><span class="muted">Östersund, Sverige</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <small class="muted">© 2025 NordForge Training. Alla rättigheter förbehållna.</small>
+    </div>
+  </footer>
+</body>
+</html>
