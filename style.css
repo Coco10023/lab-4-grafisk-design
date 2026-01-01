@@ -120,8 +120,14 @@ a:hover {
 }
 
 .nav-link:hover { 
-    background: rgba(232,237,242,.06); color: var(--text); }
-.nav-link.is-active{ color: var(--text); background: rgba(232,237,242,.08); }
+    background: rgba(232,237,242,.06); 
+    color: var(--text); 
+}
+
+.nav-link.is-active { 
+    color: var(--text); 
+    background: rgba(232,237,242,.08); 
+}
 
 .nav-cart { 
     display:flex; align-items:center; gap:.55rem; 
