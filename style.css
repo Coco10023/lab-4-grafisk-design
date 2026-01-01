@@ -104,6 +104,7 @@ a:hover {
 .brand-name { 
     font-weight: 800; letter-spacing:.2px; 
 }
+
 .brand-tag { 
     font-size:.85rem; color: var(--muted); 
 }
@@ -559,14 +560,14 @@ select {
   flex-wrap: wrap;
 }
 
-.info-panels{
+.info-panels {
   display:grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin-top: 1rem;
 }
 
-.panel{
+.panel {
   padding: 1rem;
   border-radius: var(--radius);
   border: 1px solid var(--line);
@@ -738,26 +739,31 @@ select {
 }
 
 /* ---------- Products page extras ---------- */
-.products-hero{
+.products-hero {
   display:grid;
   grid-template-columns: 1.2fr .8fr;
   gap: 1rem;
   align-items:start;
 }
-.products-hero-card{
+
+.products-hero-card {
   padding: 1rem;
   border-radius: var(--radius);
   border: 1px solid var(--line);
   background: rgba(16,24,35,.7);
 }
-.mini-title{ margin: 0 0 .4rem; font-size: 1.05rem; }
 
-.category-grid{
+.mini-title { 
+  margin: 0 0 .4rem; font-size: 1.05rem; 
+}
+
+.category-grid {
   display:grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
-.category{
+
+.category {
   display:block;
   padding: 1rem;
   border-radius: var(--radius);
@@ -765,11 +771,20 @@ select {
   background: rgba(16,24,35,.65);
   text-decoration:none !important;
 }
-.category:hover{ background: rgba(232,237,242,.06); }
-.category h3{ margin: 0 0 .35rem; }
-.category p{ margin: 0 0 .65rem; }
 
-.grid-head{
+.category:hover { 
+  background: rgba(232,237,242,.06); 
+}
+
+.category h3 { 
+  margin: 0 0 .35rem; 
+}
+
+.category p { 
+  margin: 0 0 .65rem; 
+}
+
+.grid-head {
   display:grid;
   grid-template-columns: 1fr;
   gap: 1rem;
@@ -779,34 +794,35 @@ select {
 /* ---------- About page ---------- */
 
 /* Smalare textyta för bättre läsbarhet */
-.container.narrow{
+.container.narrow {
   max-width: 760px;
 }
 
 /* Intro-rubrik */
-.page-title{
+.page-title {
   font-size: clamp(2rem, 4vw, 2.6rem);
   line-height: 1.1;
   margin-bottom: .6rem;
 }
 
 /* Sektioner på about-sidan */
-.section p{
+.section p {
   font-size: 1.05rem;
   line-height: 1.7;
 }
 
 /* Listor (arbetsprocess etc.) */
-.bullets{
+.bullets {
   margin: .8rem 0 0;
   padding-left: 1.1rem;
 }
-.bullets li{
+
+.bullets li {
   margin-bottom: .5rem;
 }
 
 /* Panel (projektinfo) */
-.section .panel{
+.section .panel {
   margin-top: .5rem;
   background:
     linear-gradient(
@@ -817,10 +833,10 @@ select {
 }
 
 /* Visuell markering för "Om utvecklaren" */
-.section:nth-of-type(3){
+.section:nth-of-type(3) {
   position: relative;
 }
-.section:nth-of-type(3)::before{
+.section:nth-of-type(3)::before {
   content: "";
   position: absolute;
   left: 0;
@@ -836,25 +852,39 @@ select {
 }
 
 /* Footer lite luftigare på about-sidan */
-.site-footer{
+.site-footer {
   margin-top: 2rem;
 }
 
 
 
 /* ---------- Responsive ---------- */
-@media (max-width: 900px){
-  .hero-grid{ grid-template-columns: 1fr; }
-  .hero-media img{ height: 320px; }
-  .product-grid{ grid-template-columns: repeat(2, 1fr); }
-  .cards-3{ grid-template-columns: 1fr; }
-  .footer-grid{ grid-template-columns: 1fr; }
-  .section-head{ align-items:flex-start; flex-direction:column; }
+@media (max-width: 900px) {
+  .hero-grid { 
+    grid-template-columns: 1fr; 
+  }
+  .hero-media img { 
+    height: 320px; 
+  }
+  .product-grid { 
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .cards-3 { 
+    grid-template-columns: 1fr; 
+  }
+  .footer-grid { 
+    grid-template-columns: 1fr; 
+  }
+  .section-head { 
+    align-items:flex-start; flex-direction:column; 
+  }
 }
 
 @media (max-width: 720px) {
-  .menu-toggle{ display:inline-flex; }
-  .nav{
+  .menu-toggle { 
+    display:inline-flex; 
+  }
+  .nav {
     display:none;
     position:absolute;
     right: 1rem;
@@ -868,27 +898,49 @@ select {
     border: 1px solid var(--line);
     border-radius: 16px;
   }
-  .nav.is-open{ display:flex; }
-  .nav-link{ width:100%; }
-  input{ min-width: 220px; }
+  .nav.is-open { 
+    display:flex; 
+  }
+  .nav-link { 
+    width:100%; 
+  }
+  input { 
+    min-width: 220px; 
+  }
 }
 
-@media (max-width: 900px){
-  .products-hero{ grid-template-columns: 1fr; }
-  .category-grid{ grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 900px) {
+  .products-hero { 
+    grid-template-columns: 1fr; 
+  }
+  .category-grid { 
+    grid-template-columns: repeat(2, 1fr); 
+  }
 }
-@media (max-width: 520px){
+
+@media (max-width: 520px) {
   .category-grid{ grid-template-columns: 1fr; }
 }
 
 
 /* ---------- Responsive additions ---------- */
-@media (max-width: 900px){
-  .page-head-grid{ grid-template-columns: 1fr; }
-  .product-page{ grid-template-columns: 1fr; }
-  .gallery-main img{ height: 320px; }
-  .info-panels{ grid-template-columns: 1fr; }
-  .cutout{ grid-template-columns: 1fr; }
-  .cart-grid{ grid-template-columns: 1fr; }
+@media (max-width: 900px) {
+  .page-head-grid { 
+    grid-template-columns: 1fr; 
+  }
+  .product-page { 
+    grid-template-columns: 1fr; 
+  }
+  .gallery-main img { height: 320px; 
+  }
+  .info-panels { 
+    grid-template-columns: 1fr; 
+  }
+  .cutout { 
+    grid-template-columns: 1fr; 
+  }
+  .cart-grid { 
+    grid-template-columns: 1fr; 
+  }
 }
 
