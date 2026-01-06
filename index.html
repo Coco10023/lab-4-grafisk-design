@@ -3,10 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="NordForge Training – webbutik för gymredskap. Kettlebells, gummiband, lyftbälte och mer." />
+  <meta name="description" content="NordForge Training - webbutik för gymredskap. Kettlebells, gummiband, lyftbälte och mer." />
   <title>NordForge Training | Gymredskap</title>
-
-  <link rel="icon" href="assets/img/favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -38,7 +36,6 @@
           <span class="cart-badge" data-cart-count>0</span>
         </a>
       </nav>
-
     </div>
   </header>
 
@@ -67,8 +64,16 @@
         </div>
 
         <div class="hero-media" aria-label="Produktbild">
-          <!-- Byt till dina egna bilder. Använd gärna <picture> senare för webp + fallback -->
-          <img src="assets/img/hero.jpg" alt="Gymredskap i träningsmiljö" loading="eager" />
+          <picture>
+            <source srcset = "bilder/Gymredskap.avif" type="image/avif">
+            <source srcset="bilder/Gymredskap.webp" type="image/webp">
+            <img 
+              src="bilder/Gymredskap.jpg" 
+              alt="Gymredskap i träningsmiljö" 
+              width = "1152"
+              height = "2048"
+              loading ="lazy">
+          </picture>
         </div>
       </div>
     </section>
@@ -109,12 +114,20 @@
         <div class="product-grid">
           <!-- Produkt 1 -->
           <article class="product">
-            <a class="product-media" href="product-1.html">
-              <img src="assets/img/product-1.jpg" alt="Greppstärkare" loading="lazy" />
+            <a class="product-media" href="products.html">
+              <picture>
+                <source srcset = "bilder/greppstärkare.avif" type = "image/avif">
+                <source srcset = "bilder/greppstärkare.webp" type = "image/webp">
+                <img src="bilder/greppstärkare.jpg" 
+                     alt="Greppstärkare" 
+                     loading="lazy"
+                     width = "1152"
+                     height = "2048">
+              </picture>
             </a>
             <div class="product-body">
               <p class="badge">Bästsäljare</p>
-              <h3 class="product-title"><a href="product-1.html">Greppstärkare</a></h3>
+              <h3 class="product-title"><a href="products.html">Greppstärkare</a></h3>
               <p class="product-desc">Greppstärkare med greppvänlig yta. För att stärka fingrarna och underarmarna.</p>
               <div class="product-row">
                 <span class="price">99 kr</span>
@@ -122,14 +135,23 @@
             </div>
           </article>
 
+
           <!-- Produkt 2 -->
           <article class="product">
-            <a class="product-media" href="product-2.html">
-              <img src="assets/img/product-2.jpg" alt="Gummiband" loading="lazy" />
+            <a class="product-media" href="products.html">
+              <picture>
+                <source srcset="bilder/Gummiband.avif" type = "image/avif">
+                <source srcset="bilder/Gummiband.webp" type = "image/webp">
+              <img src="bilder/Gummiband.jpg" 
+                   alt="Gummiband" 
+                   loading="lazy"
+                   width = "1152"
+                   height="2048">
+              </picture>
             </a>
             <div class="product-body">
               <p class="badge badge-muted">Nyhet</p>
-              <h3 class="product-title"><a href="product-2.html">Gummiband</a></h3>
+              <h3 class="product-title"><a href="products.html">Gummiband</a></h3>
               <p class="product-desc">För uppvärmning, rehab och pull-ups.</p>
               <div class="product-row">
                 <span class="price">19 kr</span>
@@ -137,14 +159,23 @@
             </div>
           </article>
 
+
           <!-- Produkt 3 -->
           <article class="product">
-            <a class="product-media" href="product-3.html">
-              <img src="assets/img/product-3.jpg" alt="Medicinboll" loading="lazy" />
+            <a class="product-media" href="products.html">
+              <picture>
+                <source srcset="bilder/Medicinboll.avif" type="image/avif">
+                <source srcset = "bilder/Medicinboll.webp" type="image/webp">
+                <img src="bilder/Medicinboll.jpg" 
+                     alt="Medicinboll" 
+                     loading="lazy"
+                     width="1152"
+                     height="2048">
+              </picture>
             </a>
             <div class="product-body">
               <p class="badge">Styrka</p>
-              <h3 class="product-title"><a href="product-3.html">Medicinboll</a></h3>
+              <h3 class="product-title"><a href="products.html">Medicinboll</a></h3>
               <p class="product-desc">Träna din bål, balans och genomför explosivitetsövningar.</p>
               <div class="product-row">
                 <span class="price">199 kr</span>
@@ -152,38 +183,6 @@
             </div>
           </article>
 
-          <!-- Produkt 4 -->
-          <article class="product">
-            <a class="product-media" href="product-4.html">
-              <img src="assets/img/product-4.jpg" alt="Boxningshandskar" loading="lazy" />
-            </a>
-            <div class="product-body">
-              <p class="badge badge-muted">Cardio</p>
-              <h3 class="product-title"><a href="product-4.html">Boxningshandskar</a></h3>
-              <p class="product-desc">Snabbt och lätt. Perfekt för intervaller och warm-up.</p>
-              <div class="product-row">
-                <span class="price">299 kr</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Produkt 5 -->
-          <article class="product">
-            <a class="product-media" href="product-5.html">
-              <img src="assets/img/product-5.jpg" alt="Maghjul" loading="lazy" />
-            </a>
-            <div class="product-body">
-              <p class="badge">Recovery</p>
-              <h3 class="product-title"><a href="product-5.html">Maghjul</a></h3>
-              <p class="product-desc">Rulla igång corestyrkan med maghjulet.</p>
-              <div class="product-row">
-                <span class="price">199 kr</span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
 
     <!-- NEWSLETTER / CTA -->
     <section class="section">
